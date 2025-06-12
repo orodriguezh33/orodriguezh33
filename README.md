@@ -53,7 +53,7 @@ Además, he desarrollado proyectos con inteligencia artificial aplicada a finanz
 ## 📫 Contacto
 
 📧 orodriguezh33@gmail.com  
-🔗 [LinkedIn](http://linkedin.com/in/oscar-rodriguez-7b341823b)
+🔗 [LinkedIn]([http://linkedin.com/in/oscar-rodriguez-7b341823b](https://www.linkedin.com/in/oscar-rodriguez-7b341823b/))
 
 
 ---
