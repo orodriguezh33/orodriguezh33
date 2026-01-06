@@ -1,61 +1,51 @@
-
 # 👋 Hola, soy Oscar Rodríguez
 
-🎓 Administrador de Empresas y Magíster en Finanzas  
-🧠 Apasionado por la programación, la inteligencia artificial y la ciencia de datos aplicada al mundo real.
+### **BI Developer | Finance Background**
+
+Transformo datos crudos en decisiones de negocio estratégicas. Mi experiencia en **Finanzas** me permite entender el *porqué* del negocio, mientras que mis habilidades técnicas en **BI y Data Engineering** me permiten construir el *cómo*.
 
 ---
 
-## 🧭 Sobre mí
+### 🛠️ Tech Stack & Herramientas
 
-Actualmente me desempeño como **Financial Manager de una cadena de cafeterías**, donde he liderado proyectos de:
-
-- 📊 Análisis financiero integral (EBITDA, utilidad neta, punto de equilibrio)
-- 📈 Análisis de ventas y rentabilidad por tienda
-- 📉 Control de gastos y costos operativos
-- 🛒 Optimización de compras e inventario
-
-Además, he desarrollado proyectos con inteligencia artificial aplicada a finanzas, ventas y reportes automatizados utilizando Python, Pandas y modelos LLM.
-
----
-
-## 🚀 Portafolio de Proyectos
-
-| Proyecto | Descripción | Tecnologías |
-|---------|-------------|-------------|
-| [📊 Análisis financiero de cafeterías](https://github.com/tu_usuario/proyecto-finanzas-cafeterias) | Caso real simulando ventas y costos para detectar tiendas con baja rentabilidad. | `Pandas`, `Excel`, `Matplotlib`, `Storytelling` |
-| 🤖 Copiloto financiero con IA (Zenbi SQL Agent) | Agente IA que responde preguntas en lenguaje natural usando SQL, Streamlit y modelos LLM locales. | `LangChain`, `Mistral`, `SQLite`, `Plotly` |
-| 🧠 ZenBI RAG | Sistema que analiza PDFs financieros con recuperación semántica (RAG) y explica los resultados en lenguaje natural. | `FAISS`, `Docling`, `LangChain`, `Mistral` |
-| ⚙️ Automatización de informes financieros | Generador de reportes en PDF con análisis de KPIs por tienda, mes y categoría. | `Python`, `Pandas`, `Plotly`, `PDF` |
+| Área | Herramientas |
+| :--- | :--- |
+| **Business Intelligence** | Power BI (DAX, Power Query), Tableau |
+| **Data Engineering** | Python (Pandas, Numpy), SQL, ETL Pipelines |
+| **Bases de Datos** | PostgreSQL, SQL Server |
+| **Infraestructura** | Docker, Docker Compose |
+| **Herramientas** | VS Code, Git/GitHub, pgAdmin |
 
 ---
 
-## 🧰 Tecnologías
+### 🚀 Proyecto Destacado
 
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)
-![Plotly](https://img.shields.io/badge/-Plotly-3F4F75?logo=plotly&logoColor=white)
-![LangChain](https://img.shields.io/badge/-LangChain-000000?logo=langchain&logoColor=white)
-![SQLite](https://img.shields.io/badge/-SQLite-07405e?logo=sqlite&logoColor=white)
-![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+#### [📊 End-to-End Churn Analytics Platform](LINK_A_TU_REPOSITORIO_AQUI)
+*Una arquitectura completa de BI simulando un entorno empresarial real.*
 
----
+* **El Problema:** Analizar y monitorear la retención de clientes (Churn).
+* **La Solución:** Un pipeline ETL en Python que alimenta un Data Warehouse en PostgreSQL (esquema estrella) y visualiza KPIs en Power BI.
+* **Tecnologías:** Docker, Python, PostgreSQL, Power BI.
 
-## 📌 Actualmente trabajando en...
-
-- 🔁 Dashboards interactivos para monitorear KPIs en tiempo real
-- 🧠 Implementación de IA para automatizar análisis financieros complejos
-- 📦 Desarrollo de un portafolio profesional basado en casos reales
+> *Este proyecto demuestra cómo diseño soluciones escalables, pensando en capas de datos y no solo en archivos sueltos.*
 
 ---
 
-## 📫 Contacto
+### 📈 GitHub Stats
+
+![Oscar's GitHub stats](https://github-readme-stats.vercel.app/api?username=orodriguezh33&show_icons=true&theme=radical)
+
+---
+
+### 📫 Conectemos
+
+Si te interesa discutir sobre arquitectura de datos, BI o cómo los datos impactan las finanzas, no dudes en contactarme.
+
+* 📧 [orodriguezh33@gmail.com](mailto:orodriguezh33@gmail.com)
+* 🔗 [LinkedIn](https://www.linkedin.com/in/oscar-rodriguez-7b341823b/)
+
+Si te interesa discutir sobre arquitectura de datos, BI o cómo los datos impactan las finanzas, no dudes en contactarme.
+
 
 📧 orodriguezh33@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/oscar-rodriguez-7b341823b/)
-
-
----
-
-> *“La inteligencia de negocio no es solo ver números, es entenderlos para tomar mejores decisiones.”*
