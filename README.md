@@ -37,9 +37,3 @@ Si te interesa discutir sobre arquitectura de datos, BI o cómo los datos impact
 
 * 📧 [orodriguezh33@gmail.com](mailto:orodriguezh33@gmail.com)
 * 🔗 [LinkedIn](https://www.linkedin.com/in/oscar-rodriguez-7b341823b/)
-
-Si te interesa discutir sobre arquitectura de datos, BI o cómo los datos impactan las finanzas, no dudes en contactarme.
-
-
-📧 orodriguezh33@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/oscar-rodriguez-7b341823b/)
