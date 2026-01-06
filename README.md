@@ -31,12 +31,6 @@ Transformo datos crudos en decisiones de negocio estratégicas. Mi experiencia e
 
 ---
 
-### 📈 GitHub Stats
-
-![Oscar's GitHub stats](https://github-readme-stats.vercel.app/api?username=orodriguezh33&show_icons=true&theme=radical)
-
----
-
 ### 📫 Conectemos
 
 Si te interesa discutir sobre arquitectura de datos, BI o cómo los datos impactan las finanzas, no dudes en contactarme.
