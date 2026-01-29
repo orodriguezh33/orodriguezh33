@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Oscar Rodríguez
+# 👋 Hi, I'm Oscar
 
 ### Data Engineer & BI Developer | Finance Background
 
