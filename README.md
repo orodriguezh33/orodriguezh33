@@ -54,7 +54,7 @@ As a **Data Engineer & BI Developer**, I focus on the *how*: designing scalable 
 
 ### 🏗️ End-to-End Data Warehouse & ETL Platform (SQL Server)
 
-🔗 **Repository:** https://github.com/orodriguezh33/sql-dwh-etl
+🔗 **Repository:** https://github.com/orodriguezh33/sql-datawarehouse-etl
 
 A **production-style ETL project** simulating a real enterprise data platform:
 
