@@ -1,4 +1,4 @@
-# Oscar Rodriguez 👋
+# Hi, I'm Oscar 👋
 
 Finance guy learning data engineering by building stuff.
 
