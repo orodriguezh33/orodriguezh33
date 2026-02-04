@@ -1,4 +1,4 @@
-# Oscar Rodriguez
+# Oscar Rodriguez 👋
 
 Finance guy learning data engineering by building stuff.
 
