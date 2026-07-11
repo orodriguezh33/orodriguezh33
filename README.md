@@ -30,6 +30,11 @@ understanding what the numbers mean *and* building the infrastructure to get to 
 
 ## Featured projects
 
+### [Walmart Data Platform — CSVs to an Orchestrated Data Warehouse](https://github.com/orodriguezh33/Walmart-Data-Platform-from-CSVs-to-an-orchestrated-Data-Warehouse)
+End-to-end pipeline simulating a live retail source system: Postgres CDC into a Databricks lakehouse, transformed through a dbt medallion architecture (incremental models, snapshots for SCD2, STAR schema) and orchestrated daily with Airflow (CeleryExecutor) in Docker. CI runs lint and `dbt test` against the real warehouse on every push.
+
+`Python` `dbt` `Airflow` `Databricks` `PostgreSQL` `Docker` `CDC`
+
 ### [DIAN Exogena Pipeline](https://github.com/orodriguezh33/exogena-2026-pipeline)
 Production ETL for Colombian electronic invoicing (DIAN exogena reporting).
 Multi-company Excel ingestion · Parquet caching · NIT deduplication engine · regulatory CSV outputs · Playwright scraper for DIAN portal enrichment.
@@ -57,6 +62,9 @@ clean SQL design, reusable validation logic, and Docker containerisation.
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black" />
   <img src="https://img.shields.io/badge/MotherDuck-FFDE00?style=for-the-badge&logo=duckdb&logoColor=black" />
+  <img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" />
   <img src="https://img.shields.io/badge/Terminal-241F31?style=for-the-badge&logo=gnometerminal&logoColor=white" />
 
 </p>
@@ -65,7 +73,6 @@ clean SQL design, reusable validation logic, and Docker containerisation.
 
 <p>
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" />
 </p>
 
 ---
@@ -74,7 +81,6 @@ clean SQL design, reusable validation logic, and Docker containerisation.
 
 - Strava running analytics pipeline — Supabase + dbt + Python + Telegram bot
 - Deepening AWS data stack (S3, Glue, Athena)
-- dbt for transformation workflows
 
 ---
 
