@@ -1,92 +1,86 @@
 <div align="center">
-  <h1>Hi, I'm Oscar</h1>
-  <p><b>Data Analyst · Finance Background · Building production data pipelines</b></p>
-  <p>Python · SQL · Power BI · Docker · Parquet · Excel</p>
-  <a href="https://www.linkedin.com/in/oscar-rodriguez-7b341823b/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:orodriguezh33@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
+
+# Hi, I'm Oscar
+
+**Analytics Engineer · Finance background · I build data pipelines**
+
+Python · SQL · Databricks · dbt ·  Airflow · Power Bi · Docker
+
+<a href="https://www.linkedin.com/in/oscar-rodriguez-7b341823b/">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="mailto:orodriguezh33@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+<sub>Based in Colombia (UTC-5) · Open to remote roles</sub>
+
 </div>
 
 ---
 
 ## About me
 
-Data Analyst with a Finance background (Master's in Financial Management).
-I build automated ETL pipelines and dashboards that turn raw, multi-source business data into reliable, analytics-ready outputs.
+Analytics Engineer with a Finance background — I spent years reading financial and operational numbers before I started building the systems that produce them.
 
-My work combines Finance domain knowledge with hands-on engineering:
-understanding what the numbers mean *and* building the infrastructure to get to them consistently.
+I have a Master's in Financial Management, and I work with Python, SQL, dbt, Airflow, Databricks and Power BI to turn raw, multi-source data into reliable, analytics-ready models.
 
-**What I bring**
-- End-to-end pipeline ownership: ingestion → transformation → validation → output
-- Strong Finance and business context behind every data model
-- Focus on clean, reproducible, production-grade workflows
-- Experience working with real regulatory and operational data (DIAN, QuickBooks, banking)
+**How I work**
+
+- End-to-end ownership: ingestion → transformation → validation → output
+- Reproducible by default — containerized and version-controlled
+- Every model traces back to a business question, not just a schema
+- Real operational and financial data: banking, QuickBooks, payments, regulatory filings
 
 ---
 
-## Featured projects
+## Featured project
 
-### [Walmart Data Platform — CSVs to an Orchestrated Data Warehouse](https://github.com/orodriguezh33/Walmart-Data-Platform-from-CSVs-to-an-orchestrated-Data-Warehouse)
-End-to-end pipeline simulating a live retail source system: Postgres CDC into a Databricks lakehouse, transformed through a dbt medallion architecture (incremental models, snapshots for SCD2, STAR schema) and orchestrated daily with Airflow (CeleryExecutor) in Docker. CI runs lint and `dbt test` against the real warehouse on every push.
+### [Customer Churn Analysis Portfolio](https://github.com/orodriguezh33/Customer-Churn-Analysis-Portfolio)
 
-`Python` `dbt` `Airflow` `Databricks` `PostgreSQL` `Docker` `CDC`
+A Bronze → Silver → Gold pipeline on Databricks and dbt across 6,007 customers (28.8% historical churn), feeding a logistic regression tuned for recall over precision — missing an at-risk customer costs more than calling a safe one.
 
-### [DIAN Exogena Pipeline](https://github.com/orodriguezh33/exogena-2026-pipeline)
-Production ETL for Colombian electronic invoicing (DIAN exogena reporting).
-Multi-company Excel ingestion · Parquet caching · NIT deduplication engine · regulatory CSV outputs · Playwright scraper for DIAN portal enrichment.
+- **0.82 recall, 0.87 ROC AUC**, with the threshold chosen for the business cost of a false negative rather than for a leaderboard metric.
+- **A churn rate that can't be gamed** — the KPI uses the exposed base (churned + stayed) as its denominator, excluding newly joined customers, so the number can't be improved just by acquiring more.
+- **Output the commercial team can use** — a Power BI dashboard that ranks 280 of 405 scored customers into a prioritized call list.
 
-`Python` `pandas` `openpyxl` `PyArrow` `Parquet` `Playwright` `pyyaml` `uv`
+`Python` `scikit-learn` `Databricks` `dbt` `SQL` `Power BI` `DAX`
 
-### [SQL Data Warehouse ELT Pipeline](https://github.com/orodriguezh33/sql-datawarehouse-etl)
-End-to-end ELT pipeline with Bronze/Silver/Gold medallion architecture,
-clean SQL design, reusable validation logic, and Docker containerisation.
+---
 
-`Python` `PostgreSQL` `Docker` `pandas`
+## Also on my GitHub
+
+- **[SQL Data Warehouse ELT Pipeline](https://github.com/orodriguezh33/sql-datawarehouse-etl)** — Bronze/Silver/Gold medallion ELT with reusable validation logic, containerized with Docker.
+
+- **[Weather ETL — Airflow on Astro Runtime](https://github.com/orodriguezh33/ETL-Weather-con-Astro-Airflow-y-PostgreSQL)** — a small, reproducible Airflow reference: a scheduled extract/transform/load DAG against the Open-Meteo API, with connections declared in `airflow_settings.yaml` rather than clicked into the UI, idempotent table creation, and `astro dev parse` / `pytest` checks.
+
+- **[Data Engineering Projects](https://github.com/orodriguezh33/data_engineering_projects)** — SQL exercises and notebooks working through data engineering patterns.
+
+- **[DIAN Exógena Pipeline](https://github.com/orodriguezh33/exogena-2026-pipeline)** — a working script that prepares Colombian regulatory filings: reads multi-company Excel workbooks, normalizes taxpayer IDs, and writes the CSV format the tax authority expects. Small, but it runs against real filings.
 
 ---
 
 ## Tech stack
 
-**Core**
+**Pipelines & orchestration** — Python, dbt, Apache Airflow, Astro Runtime, Docker
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
-  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black" />
-  <img src="https://img.shields.io/badge/MotherDuck-FFDE00?style=for-the-badge&logo=duckdb&logoColor=black" />
-  <img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" />
-  <img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" />
-  <img src="https://img.shields.io/badge/Terminal-241F31?style=for-the-badge&logo=gnometerminal&logoColor=white" />
+**Storage & warehousing** — Databricks, PostgreSQL, SQL Server, DuckDB, Delta Lake, Parquet
 
-</p>
+**Analysis & BI** — pandas, scikit-learn, Power BI, DAX, advanced Excel
 
-**Learning**
+**Workflow** — Git, GitHub, uv, Linux terminal
 
-<p>
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" />
-</p>
+**Learning** — AWS (S3, IAM), Terraform
 
 ---
 
 ## Currently building
 
-- Strava running analytics pipeline — Supabase + dbt + Python + Telegram bot
-- Deepening AWS data stack (S3, Glue, Athena)
+- **Customer Revenue Prediction** — regression and behavioral segmentation on the UCI Online Retail II dataset: raw transactions rolled into a customer-level feature table, then used to predict forward revenue and cluster customers by purchasing behavior.
+- **Walmart Data Platform** — a retail lakehouse with Postgres CDC into Databricks, a dbt medallion architecture, and Airflow orchestration, with the cloud layer as infrastructure as code: Terraform provisioning the S3 bucket and IAM policies instead of console clicks.
 
 ---
 
-## Let's connect
-
-Open to Data Analyst, Analytics Engineer, and BI Developer roles — remote-first.
-
-- LinkedIn: [Oscar Rodríguez](https://www.linkedin.com/in/oscar-rodriguez-7b341823b/)
-- Email: orodriguezh33@gmail.com
+<div align="center">
+<sub>Open to remote Analytics Engineering, Data Engineering and BI roles · <a href="mailto:orodriguezh33@gmail.com">orodriguezh33@gmail.com</a></sub>
+</div>
