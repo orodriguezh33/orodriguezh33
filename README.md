@@ -56,7 +56,6 @@ A Bronze → Silver → Gold pipeline on Databricks and dbt across 6,007 custome
 
 - **[Data Engineering Projects](https://github.com/orodriguezh33/data_engineering_projects)** — SQL exercises and notebooks working through data engineering patterns.
 
-- **[DIAN Exógena Pipeline](https://github.com/orodriguezh33/exogena-2026-pipeline)** — a working script that prepares Colombian regulatory filings: reads multi-company Excel workbooks, normalizes taxpayer IDs, and writes the CSV format the tax authority expects. Small, but it runs against real filings.
 
 ---
 
