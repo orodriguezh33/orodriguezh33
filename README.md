@@ -2,11 +2,11 @@
 
 # Hi, I'm Oscar
 
-**Analytics Engineer · Finance background · I build data pipelines**
+**Analytics Engineer | SQL, Python, dbt | Finance Data Consolidation**
 
-Python · SQL · Databricks · dbt ·  Airflow · Power Bi · Docker
+SQL · Python · dbt · Databricks · Airflow · Power BI · Docker
 
-<a href="https://www.linkedin.com/in/oscar-rodriguez-7b341823b/">
+<a href="https://www.linkedin.com/in/oscar-erh/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 <a href="mailto:orodriguezh33@gmail.com">
@@ -21,62 +21,70 @@ Python · SQL · Databricks · dbt ·  Airflow · Power Bi · Docker
 
 ## About me
 
-Analytics Engineer with a Finance background — I spent years reading financial and operational numbers before I started building the systems that produce them.
+Analytics Engineer with a finance background. I spent years reading financial and operational numbers before I started building the pipelines that produce them.
 
-I have a Master's in Financial Management, and I work with Python, SQL, dbt, Airflow, Databricks and Power BI to turn raw, multi-source data into reliable, analytics-ready models.
+I have a Master's in Financial Management, and my best-known result is cutting a 3-hour financial reporting task to 15 minutes by consolidating 9 entities and 15 bank accounts into one Python pipeline.
 
 **How I work**
 
 - End-to-end ownership: ingestion → transformation → validation → output
-- Reproducible by default — containerized and version-controlled
+- Reproducible by default: containerized, version-controlled, tested in CI
 - Every model traces back to a business question, not just a schema
-- Real operational and financial data: banking, QuickBooks, payments, regulatory filings
+- Real operational and financial data: banking, QuickBooks, payments, tax filings
 
 ---
 
-## Featured project
+## Featured projects
 
-### [Customer Churn Analysis Portfolio](https://github.com/orodriguezh33/Customer-Churn-Analysis-Portfolio)
+### [Retail Data Platform](https://github.com/orodriguezh33/retail-data-platform)
 
-A Bronze → Silver → Gold pipeline on Databricks and dbt across 6,007 customers (28.8% historical churn), feeding a logistic regression tuned for recall over precision — missing an at-risk customer costs more than calling a safe one.
+A retail lakehouse that moves operational data from PostgreSQL into Databricks through CDC, transforms it with dbt in a medallion architecture and runs daily on Airflow.
 
-- **0.82 recall, 0.87 ROC AUC**, with the threshold chosen for the business cost of a false negative rather than for a leaderboard metric.
-- **A churn rate that can't be gamed** — the KPI uses the exposed base (churned + stayed) as its denominator, excluding newly joined customers, so the number can't be improved just by acquiring more.
-- **Output the commercial team can use** — a Power BI dashboard that ranks 280 of 405 scored customers into a prioritized call list.
+- **6 incremental models and 5 SCD Type 2 dimensions** built from dbt snapshots, feeding an order-line fact table in a star schema.
+- **A 10-task Airflow DAG** that checks source freshness first and runs dbt tests after each layer.
+- **CI on every pull request**: ruff, sqlfluff and dbt test in GitHub Actions.
+
+`Databricks` `Delta Lake` `dbt` `Airflow` `PostgreSQL` `Docker` `GitHub Actions`
+
+### [Customer Churn Analysis](https://github.com/orodriguezh33/Customer-Churn-Analysis-Portfolio)
+
+A Bronze → Silver → Gold pipeline on Databricks and dbt across 6,007 customers (28.8% historical churn), feeding a logistic regression tuned for recall: missing an at-risk customer costs more than calling a safe one.
+
+- **0.82 recall, 0.87 ROC AUC**, with the threshold chosen for the business cost of a false negative.
+- **A churn rate that can't be gamed**: the KPI uses the exposed base (churned + stayed) as its denominator, so acquiring new customers cannot improve it.
+- **Output the commercial team can use**: a Power BI dashboard that ranks 280 of 405 scored customers into a prioritized call list.
 
 `Python` `scikit-learn` `Databricks` `dbt` `SQL` `Power BI` `DAX`
 
 ---
 
-## Also on my GitHub
+## More projects
 
-- **[SQL Data Warehouse ELT Pipeline](https://github.com/orodriguezh33/sql-datawarehouse-etl)** — Bronze/Silver/Gold medallion ELT with reusable validation logic, containerized with Docker.
+- **[Job Market Data Warehouse](https://github.com/orodriguezh33/data_engineering_projects)**: a DuckDB pipeline from Google Cloud Storage into a star schema with 4 analytical data marts, idempotent loads and incremental updates with MERGE.
+- **[SQL Data Warehouse ETL](https://github.com/orodriguezh33/sql-datawarehouse-etl)**: a tutorial-based SQL Server warehouse (bronze, silver, gold) that I extended with Python orchestration, Docker Compose and fail-fast validation.
 
-- **[Weather ETL — Airflow on Astro Runtime](https://github.com/orodriguezh33/ETL-Weather-con-Astro-Airflow-y-PostgreSQL)** — a small, reproducible Airflow reference: a scheduled extract/transform/load DAG against the Open-Meteo API, with connections declared in `airflow_settings.yaml` rather than clicked into the UI, idempotent table creation, and `astro dev parse` / `pytest` checks.
+---
 
-- **[Data Engineering Projects](https://github.com/orodriguezh33/data_engineering_projects)** — SQL exercises and notebooks working through data engineering patterns.
+## Client work (private repositories)
 
+- **Multi-entity finance consolidation, Santos Coffee (US)**: a Python (pandas) ETL pipeline that consolidates 15 bank accounts, 9 QuickBooks companies and Toast POS data into one reconciled dataset. Cut a 3-hour reporting task to 15 minutes.
+- **Colombian tax reporting pipeline (DIAN)**: a config-driven Python ETL (pandas, Parquet) that consolidates e-invoicing exports per company, with data quality checks for duplicate invoice IDs and mismatched taxpayer IDs. Reduced a 2-hour process to 10 minutes.
 
 ---
 
 ## Tech stack
 
-**Pipelines & orchestration** — Python, dbt, Apache Airflow, Astro Runtime, Docker
+**Pipelines and orchestration**: Python, dbt, Apache Airflow, Docker
 
-**Storage & warehousing** — Databricks, PostgreSQL, SQL Server, DuckDB, Delta Lake, Parquet
+**Storage and warehousing**: Databricks, Delta Lake, PostgreSQL, SQL Server, DuckDB, Parquet, Amazon S3, Google Cloud Storage
 
-**Analysis & BI** — pandas, scikit-learn, Power BI, DAX, advanced Excel
+**Data quality**: dbt tests, source freshness checks, CI with GitHub Actions
 
-**Workflow** — Git, GitHub, uv, Linux terminal
+**Analysis and BI**: pandas, scikit-learn, Power BI, DAX, Matplotlib, Plotly
 
-**Learning** — AWS (S3, IAM), Terraform
+**Workflow**: Git, GitHub, uv, Linux terminal
 
----
-
-## Currently building
-
-- **Customer Revenue Prediction** — regression and behavioral segmentation on the UCI Online Retail II dataset: raw transactions rolled into a customer-level feature table, then used to predict forward revenue and cluster customers by purchasing behavior.
-- **Walmart Data Platform** — a retail lakehouse with Postgres CDC into Databricks, a dbt medallion architecture, and Airflow orchestration, with the cloud layer as infrastructure as code: Terraform provisioning the S3 bucket and IAM policies instead of console clicks.
+**Learning**: Terraform, AWS
 
 ---
 
